@@ -273,7 +273,7 @@ export function Dashboard() {
               Loading products…
             </p>
           </div>
-        ) : products.length && products.length === 0 ? (
+        ) : products.length === 0 ? (
           <EmptyState onAdd={handleAddNew} />
         ) : view === "grid" ? (
           <div
