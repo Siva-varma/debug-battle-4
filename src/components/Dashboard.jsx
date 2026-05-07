@@ -225,8 +225,7 @@ export function Dashboard() {
             variant="secondary"
             size="md"
             onClick={() => {
-              products.sort((a, b) => a.price > b.price);
-              setProducts(products);
+              setProducts([...products].sort((a, b) =>a>b ? 1 : -1));
             }}
             title="Sort by Price"
           >
